@@ -1,5 +1,6 @@
 Spaceship oof;
 Star [] blink = new Star[500];
+ArrayList <Asteroid> yeet = new ArrayList <Asteroid>();
 public void setup() 
 {
 size(1000, 1000);
@@ -8,6 +9,9 @@ size(1000, 1000);
 for(int i = 0; i < 500; i ++){
 		blink[i] = new Star();
 }
+for(int i = 0; i < 25; i++){
+		yeet.add(new Asteroid());
+	}
  oof = new Spaceship();
 }
 public void draw() {
@@ -19,6 +23,11 @@ oof.move();
 for(int i = 0; i < 200; i ++){
 		blink[i].show();
 }
+for(int i = 0; i < yeet.size(); i++){
+		yeet.get(i).show();
+		yeet.get(i).move();
+		
+		}
 }
 public void keyPressed(){
 	if(key == 'f'){
@@ -40,3 +49,4 @@ public void keyPressed(){
 	}
 	if(key == 'd'){oof.turn(8);}
 }
+
