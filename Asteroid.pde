@@ -11,13 +11,13 @@ class Asteroid extends Floater{
         xCorners = new int[corners];
         yCorners = new int[corners];
         xCorners[0] = 17;
-        yCorners[0] = -7;
-        xCorners[1] = 3;
-        yCorners[1] = 11;
-        xCorners[2] = -14;
+        yCorners[0] = -10;
+        xCorners[1] = 6;
+        yCorners[1] = 13;
+        xCorners[2] = -16;
         yCorners[2] = 6;
         xCorners[3] = 2;
-        yCorners[3] = -8;
+        yCorners[3] = -10;
         myColor = 170;
 	}
 	public void move(){
