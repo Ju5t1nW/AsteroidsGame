@@ -27,6 +27,11 @@ for(int i = 0; i < yeet.size(); i++){
 		yeet.get(i).show();
 		yeet.get(i).move();
 		
+		
+ float d = dist(oof.getX(), oof.getY(), yeet.get(i).getX(), yeet.get(i).getY());
+		if(d < 20){
+			yeet.remove(i);
+		}
 		}
 }
 public void keyPressed(){
